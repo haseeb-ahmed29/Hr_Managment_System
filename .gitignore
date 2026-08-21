@@ -361,3 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Runtime data and candidate documents
+HrManagmentSystem_API/Uploads/Cvs/*
+HrManagmentSystem_API/Logs/*
+!HrManagmentSystem_API/Uploads/Cvs/.gitkeep
+!HrManagmentSystem_API/Logs/.gitkeep
+.env
+.env.*
