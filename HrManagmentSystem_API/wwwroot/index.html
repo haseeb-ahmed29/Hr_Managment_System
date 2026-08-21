@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>Northstar HR Command Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/dashboard.css" />
+</head>
+<body>
+  <div id="toast" class="toast" role="status"></div>
+  <section id="loginView" class="login-view">
+    <div class="login-panel">
+      <div class="brand-mark">N</div>
+      <p class="eyebrow">NORTHSTAR PEOPLE OPS</p>
+      <h1>Run your office<br><span>with clarity.</span></h1>
+      <p class="login-copy">A calm, complete workspace for employees, requests, departments and hiring operations.</p>
+      <form id="loginForm" class="login-form">
+        <label>Email<input name="email" type="email" placeholder="you@company.com" required autocomplete="username"></label>
+        <label>Password<input name="password" type="password" placeholder="••••••••" required autocomplete="current-password"></label>
+        <button class="primary-btn" type="submit">Enter command center <span>→</span></button>
+        <p id="loginError" class="form-error"></p>
+      </form>
+      <p class="local-note"><span class="status-dot"></span> Local-first workspace · Data stays in your configured database</p>
+    </div>
+    <div class="login-visual"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="visual-card"><span>THIS MONTH</span><strong>92%</strong><small>People operations health</small><div class="sparkline"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+  </section>
+  <section id="appView" class="app-shell hidden">
+    <aside class="sidebar">
+      <div class="side-brand"><div class="brand-mark small">N</div><div><strong>Northstar</strong><small>People Operations</small></div></div>
+      <nav id="mainNav">
+        <p class="nav-label">WORKSPACE</p>
+        <button class="nav-item active" data-section="overview"><span>⌂</span> Overview</button>
+        <button class="nav-item" data-section="employees"><span>◎</span> Employees</button>
+        <button class="nav-item" data-section="departments"><span>▦</span> Departments</button>
+        <button class="nav-item" data-section="requests"><span>◫</span> Requests <b id="pendingBadge">0</b></button>
+        <p class="nav-label">OPERATIONS</p>
+        <button class="nav-item" data-section="recruitment"><span>✦</span> Recruitment</button>
+        <button class="nav-item" data-section="reports"><span>◒</span> Reports</button>
+        <button class="nav-item" data-section="settings"><span>⚙</span> Settings</button>
+      </nav>
+      <div class="side-footer"><div class="support-card"><strong>Keep your records safe</strong><p>Use yearly filters and export reports before closing a period.</p></div><button id="logoutBtn" class="logout-btn">↪ Sign out</button></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><button id="mobileMenu" class="mobile-menu">☰</button><div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="pageTitle">Overview</strong></div><div class="top-actions"><button class="icon-btn" title="Notifications">♢<i></i></button><div class="user-menu"><div id="userAvatar" class="avatar">HR</div><div><strong id="userName">HR Admin</strong><small id="userRole">Administrator</small></div><span>⌄</span></div></div></header>
+      <div class="page-body">
+        <section id="overviewSection" class="content-section">
+          <div class="page-heading"><div><p class="eyebrow">MONDAY, 21 AUGUST 2026</p><h2>Good morning, <span id="greetingName">Admin</span>.</h2><p class="muted">Here is what needs your attention across the office.</p></div><div class="heading-actions"><select id="yearFilter" class="select-control"><option value="">All years</option><option>2026</option><option>2025</option><option>2024</option></select><button id="refreshBtn" class="secondary-btn">↻ Refresh</button></div></div>
+          <div class="stat-grid"><article class="stat-card accent-blue"><div class="stat-top"><span class="stat-icon">◎</span><span class="trend positive">+8.2%</span></div><p>Total employees</p><h3 id="employeeCount">—</h3><small>Active people in your office</small></article><article class="stat-card accent-lilac"><div class="stat-top"><span class="stat-icon">◫</span><span class="trend neutral">This month</span></div><p>Open requests</p><h3 id="requestCount">—</h3><small>Awaiting review or action</small></article><article class="stat-card accent-mint"><div class="stat-top"><span class="stat-icon">▦</span><span class="trend positive">Organized</span></div><p>Departments</p><h3 id="departmentCount">—</h3><small>Teams across the office</small></article><article class="stat-card accent-peach"><div class="stat-top"><span class="stat-icon">✦</span><span class="trend neutral">Pipeline</span></div><p>Open positions</p><h3 id="positionCount">—</h3><small>Roles currently being hired</small></article></div>
+          <div class="dashboard-grid"><article class="panel wide-panel"><div class="panel-header"><div><h3>People overview</h3><p class="muted">Employee distribution by department</p></div><button class="more-btn">•••</button></div><div class="chart-area"><div class="donut" id="peopleDonut"><div><strong id="donutTotal">—</strong><small>people</small></div></div><div id="departmentLegend" class="legend"><div class="loading-line"></div><div class="loading-line"></div><div class="loading-line"></div></div></div></article><article class="panel"><div class="panel-header"><div><h3>Needs attention</h3><p class="muted">Your priority queue</p></div><button class="more-btn">•••</button></div><div id="attentionList" class="attention-list"><div class="empty-state">Loading queue…</div></div></article></div>
+          <article class="panel activity-panel"><div class="panel-header"><div><h3>Recent activity</h3><p class="muted">A live view of your office records</p></div><button class="text-btn" data-section="requests">View all →</button></div><div id="activityTable" class="table-wrap"><div class="empty-state">Loading activity…</div></div></article>
+        </section>
+        <section id="employeesSection" class="content-section hidden"><div class="page-heading"><div><p class="eyebrow">PEOPLE DIRECTORY</p><h2>Employees</h2><p class="muted">Search, filter and manage your complete employee record.</p></div><button class="primary-btn compact">+ Add employee</button></div><div class="toolbar"><div class="search-box">⌕<input id="employeeSearch" placeholder="Search by name, email or department…"></div><select id="employeeDepartment" class="select-control"><option value="">All departments</option></select><select id="employeeYear" class="select-control"><option value="">All years</option><option>2026</option><option>2025</option><option>2024</option></select><button class="secondary-btn">⇩ Export</button></div><div class="panel"><div id="employeesTable" class="table-wrap"><div class="empty-state">Loading employees…</div></div></div></section>
+        <section id="departmentsSection" class="content-section hidden"><div class="page-heading"><div><p class="eyebrow">ORGANIZATION</p><h2>Departments</h2><p class="muted">Keep teams, managers and reporting lines organized.</p></div><button class="primary-btn compact">+ Add department</button></div><div class="card-grid" id="departmentCards"><div class="empty-state">Loading departments…</div></div></section>
+        <section id="requestsSection" class="content-section hidden"><div class="page-heading"><div><p class="eyebrow">WORKFLOW CENTER</p><h2>Requests</h2><p class="muted">Review leave, financial, resignation and employee change requests.</p></div><button class="secondary-btn">⇩ Export history</button></div><div class="toolbar"><div class="search-box">⌕<input id="requestSearch" placeholder="Search requests…"></div><select id="requestStatus" class="select-control"><option value="">All statuses</option><option>Pending</option><option>Approved</option><option>Rejected</option><option>InReview</option></select><select id="requestType" class="select-control"><option value="">All types</option><option>Leave</option><option>Financial</option><option>Resignation</option><option>DataChange</option></select><select id="requestYear" class="select-control"><option value="">All years</option><option>2026</option><option>2025</option><option>2024</option></select></div><div class="panel"><div id="requestsTable" class="table-wrap"><div class="empty-state">Loading requests…</div></div></div></section>
+        <section id="recruitmentSection" class="content-section hidden"><div class="page-heading"><div><p class="eyebrow">TALENT PIPELINE</p><h2>Recruitment</h2><p class="muted">Track roles, applications and candidate progress in one place.</p></div><button class="primary-btn compact">+ New position</button></div><div class="card-grid" id="positionsGrid"><div class="empty-state">Loading positions…</div></div></section>
+        <section id="reportsSection" class="content-section hidden"><div class="page-heading"><div><p class="eyebrow">INSIGHTS</p><h2>Reports</h2><p class="muted">Filter historical office data and prepare period summaries.</p></div><button class="primary-btn compact">Generate report</button></div><div class="report-grid"><article class="report-card"><span>EMPLOYEE HISTORY</span><strong>Yearly headcount</strong><p>Compare active and archived employee records across years.</p><button class="text-btn">Open report →</button></article><article class="report-card"><span>REQUEST HISTORY</span><strong>Approvals overview</strong><p>See pending, approved and rejected workflows by period.</p><button class="text-btn">Open report →</button></article><article class="report-card"><span>HIRING INSIGHTS</span><strong>Recruitment funnel</strong><p>Monitor open positions, applications and match scores.</p><button class="text-btn">Open report →</button></article></div></section>
+        <section id="settingsSection" class="content-section hidden"><div class="page-heading"><div><p class="eyebrow">SYSTEM</p><h2>Settings</h2><p class="muted">Configure the local workspace and operational preferences.</p></div></div><div class="settings-panel panel"><div class="setting-row"><div><strong>Database persistence</strong><p class="muted">Records are stored through the configured SQL Server connection.</p></div><span class="pill success">Connected by API</span></div><div class="setting-row"><div><strong>Background jobs</strong><p class="muted">Leave accrual and pending request reminders run through Quartz/Hangfire.</p></div><span class="pill success">Configured</span></div><div class="setting-row"><div><strong>Security</strong><p class="muted">JWT authentication and role-based access protect office data.</p></div><span class="pill success">Enabled</span></div></div></section>
+      </div>
+    </main>
+  </section>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>

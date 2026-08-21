@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Department_HasChildren" xml:space="preserve">
+    <value>لا يمكن حذف القسم لوجود أقسام فرعية مرتبطة به.</value>
+  </data>
+  <data name="Department_HasEmployees" xml:space="preserve">
+    <value>لا يمكن حذف القسم لارتباط موظفين به.</value>
+  </data>
+  <data name="Department_CannotBeOwnParent" xml:space="preserve">
+    <value>لا يمكن أن يكون القسم أبًا لنفسه.</value>
+  </data>
+  <data name="Department_CodeExists" xml:space="preserve">
+    <value>كود القسم مستخدم من قبل.</value>
+  </data>
+  <data name="Department_CodeRequired" xml:space="preserve">
+    <value>يجب إدخال اسم القسم والكود.</value>
+  </data>
+  <data name="Department_Created" xml:space="preserve">
+    <value>تم إنشاء القسم بنجاح.</value>
+  </data>
+  <data name="Department_Deleted" xml:space="preserve">
+    <value>تم حذف القسم بنجاح.</value>
+  </data>
+  <data name="Department_ManagerAssigned" xml:space="preserve">
+    <value>تم تعيين هذا الموظف مديرا للقسم </value>
+  </data>
+  <data name="Department_NotFound" xml:space="preserve">
+    <value>لم يتم العثور على القسم.</value>
+  </data>
+  <data name="Department_ParentNotFound" xml:space="preserve">
+    <value>لم يتم العثور على القسم الأب.</value>
+  </data>
+  <data name="Department_Updated" xml:space="preserve">
+    <value>تم تحديث القسم بنجاح.</value>
+  </data>
+  <data name="Generic_IdMismatch" xml:space="preserve">
+    <value>رقم المعرف (ID) غير متطابق.</value>
+  </data>
+  <data name="Generic_InvalidData" xml:space="preserve">
+    <value>البيانات المرسلة غير صحيحة.</value>
+  </data>
+  <data name="Generic_NotFound" xml:space="preserve">
+    <value>لم يتم العثور على البيانات.</value>
+  </data>
+  <data name="Generic_OperationFailed" xml:space="preserve">
+    <value>فشلت العملية.</value>
+  </data>
+  <data name="Generic_OperationSucceeded" xml:space="preserve">
+    <value>تمت العملية بنجاح.</value>
+  </data>
+  <data name="Generic_UnexpectedError" xml:space="preserve">
+    <value>حدث خطأ غير متوقع.</value>
+  </data>
+  <data name="Employee_NotFound" xml:space="preserve">
+    <value>لم يتم العثور على الموظف.</value>
+  </data>
+  <data name="Employee_Created" xml:space="preserve">
+    <value>تم إنشاء الموظف بنجاح.</value>
+  </data>
+  <data name="Employee_Updated" xml:space="preserve">
+    <value>تم تحديث بيانات الموظف بنجاح.</value>
+  </data>
+  <data name="Employee_Deleted" xml:space="preserve">
+    <value>تم حذف الموظف بنجاح.</value>
+  </data>
+  <data name="Employee_EmailExists" xml:space="preserve">
+    <value>يوجد موظف آخر بنفس البريد الإلكتروني.</value>
+  </data>
+  <data name="Employee_BasicFieldsRequired" xml:space="preserve">
+    <value>الاسم الأول، اسم العائلة والبريد الإلكتروني مطلوبة.</value>
+  </data>
+  <data name="Employee_InvalidDateOfBirth" xml:space="preserve">
+    <value>تاريخ الميلاد غير صالح.</value>
+  </data>
+  <data name="Employee_MustBeAdult" xml:space="preserve">
+    <value>يجب أن يكون عمر الموظف 18 سنة على الأقل.</value>
+  </data>
+  <data name="Employee_PositionRequired" xml:space="preserve">
+    <value>المسمى الوظيفي مطلوب.</value>
+  </data>
+  <data name="Employee_DepartmentNotFound" xml:space="preserve">
+    <value>لم يتم العثور على القسم الخاص بهذا الموظف.</value>
+  </data>
+  <data name="Employee_HasSubordinates" xml:space="preserve">
+    <value>لا يمكن حذف الموظف لوجود موظفين تابعين له.</value>
+  </data>
+  <data name="Employee_IsDepartmentManager" xml:space="preserve">
+    <value>لا يمكن حذف الموظف لأنه معيّن كمدير لأحد الأقسام.</value>
+  </data>
+  <data name="Delete_DeletedByRequired" xml:space="preserve">
+    <value>معرّف الموظف الذي قام بالحذف مطلوب.</value>
+  </data>
+  <data name="Delete_Forbidden" xml:space="preserve">
+    <value>لا يمكنك حذف هذا السجل.</value>
+  </data>
+  <data name="Employee_ListLoaded" xml:space="preserve">
+    <value>تم تحميل قائمة الموظفين بنجاح.</value>
+  </data>
+  <data name="Department_ListLoaded" xml:space="preserve">
+    <value>تم تحميل قائمة الأقسام بنجاح.</value>
+  </data>
+  <data name="Pagination_InvalidPageNumber" xml:space="preserve">
+    <value>رقم الصفحة غير صالح.</value>
+  </data>
+  <data name="Pagination_InvalidPageSize" xml:space="preserve">
+    <value>حجم الصفحة غير صالح.</value>
+  </data>
+  <data name="Auth_LoginSuccess" xml:space="preserve">
+    <value>تم تسجيل الدخول بنجاح.</value>
+  </data>
+  <data name="Role_NotFound" xml:space="preserve">
+    <value>المسؤولية/الدور للموظف غير موجودة.</value>
+  </data>
+  <data name="EmployeeRole_AlreadyAssigned" xml:space="preserve">
+    <value>الموظف لديه دور/ مسؤولية  بالأصل</value>
+  </data>
+  <data name="EmployeeRole_Assigned" xml:space="preserve">
+    <value>تم اسناد الدور/المسؤولية الى الموظف المعني</value>
+  </data>
+  <data name="Auth_InvalidCredentials" xml:space="preserve">
+    <value>البريد الإلكتروني أو كلمة المرور غير صحيحة.</value>
+  </data>
+  <data name="EmployeeRole_Updated" xml:space="preserve">
+    <value>تم تحديث صلاحيات الموظف بنجاح.</value>
+  </data>
+  <data name="Auth_InvalidCurrentPassword" xml:space="preserve">
+    <value>كلمة المرور الحالية غير صحيحة.</value>
+  </data>
+  <data name="Auth_NewPasswordMustBeDifferent" xml:space="preserve">
+    <value>يجب أن تكون كلمة المرور الجديدة مختلفة عن كلمة المرور الحالية.</value>
+  </data>
+  <data name="Auth_PasswordChanged" xml:space="preserve">
+    <value>تم تغيير كلمة المرور بنجاح.</value>
+  </data>
+  <data name="Auth_Password_ContainsEmailPart" xml:space="preserve">
+    <value>يجب ألا تحتوي كلمة المرور على جزء من بريدك الإلكتروني.</value>
+  </data>
+  <data name="Auth_Password_HasWhitespace" xml:space="preserve">
+    <value>يجب ألا تحتوي كلمة المرور على فراغات.</value>
+  </data>
+  <data name="Auth_Password_IsCommon" xml:space="preserve">
+    <value>كلمة المرور شائعة جدًا، يرجى اختيار كلمة مرور أقوى.</value>
+  </data>
+  <data name="Auth_Password_MissingLower" xml:space="preserve">
+    <value>يجب أن تحتوي كلمة المرور على حرف صغير واحد على الأقل.</value>
+  </data>
+  <data name="Auth_Password_MissingDigit" xml:space="preserve">
+    <value>يجب أن تحتوي كلمة المرور على رقم واحد على الأقل.</value>
+  </data>
+  <data name="Auth_Password_MissingUpper" xml:space="preserve">
+    <value>يجب أن تحتوي كلمة المرور على حرف كبير واحد على الأقل.</value>
+  </data>
+  <data name="Auth_Password_Required" xml:space="preserve">
+    <value>كلمة المرور مطلوبة.</value>
+  </data>
+  <data name="Auth_Password_MissingSpecial" xml:space="preserve">
+    <value>يجب أن تحتوي كلمة المرور على رمز خاص واحد على الأقل.</value>
+  </data>
+  <data name="Auth_Password_TooShort" xml:space="preserve">
+    <value>يجب أن تتكوّن كلمة المرور من 8 أحرف على الأقل.</value>
+  </data>
+  <data name="EmployeeRole_NotFound" xml:space="preserve">
+    <value>لم يتم العثور على صلاحية الموظف.</value>
+  </data>
+  <data name="JobPosition_RequirementRequired" xml:space="preserve">
+    <value> المتطلبات الوظيفية مطلوبة.</value>
+  </data>
+  <data name="JobPosition_TitleRequired" xml:space="preserve">
+    <value>العنوان مطلوب.</value>
+  </data>
+  <data name="JobPosition_ClosingDateInvalid" xml:space="preserve">
+    <value>تاريخ إغلاق الوظيفة لا يمكن أن يكون في الماضي.</value>
+  </data>
+  <data name="JobPosition_DepartmentNotFound" xml:space="preserve">
+    <value>القسم ذو الرقم {0} غير موجود</value>
+  </data>
+  <data name="JobPosition_Created" xml:space="preserve">
+    <value>تم إنشاء شاغر الوظيفة بنجاح.</value>
+  </data>
+  <data name="JobPosition_DetailsLoaded" xml:space="preserve">
+    <value>تم تحميل تفاصيل الوظيفة بنجاح.</value>
+  </data>
+  <data name="JobPosition_ListLoaded" xml:space="preserve">
+    <value> تم تحميل قائمة الوظائف بنجاح.</value>
+  </data>
+  <data name="JobPosition_Updated" xml:space="preserve">
+    <value>تم تحديث الوظيفة بنجاح.</value>
+  </data>
+  <data name="JobPosition_HasApplications" xml:space="preserve">
+    <value> لا يمكن حذف الوظيفة ذات الرقم {0} لوجود طلبات تقديم مرتبطة بها.</value>
+  </data>
+  <data name="JobPosition_Deleted" xml:space="preserve">
+    <value>تم حذف الوظيفة بنجاح.</value>
+  </data>
+  <data name="JobPosition_AlreadyClosed" xml:space="preserve">
+    <value> الوظيفة مغلقة بالفعل.</value>
+  </data>
+  <data name="JobPosition_AlreadyOpen" xml:space="preserve">
+    <value>الوظيفة مفتوحة بالفعل</value>
+  </data>
+  <data name="JobPosition_Closed" xml:space="preserve">
+    <value>تم اغلاق الوظيفة بنجاح</value>
+  </data>
+  <data name="JobPosition_Reopened" xml:space="preserve">
+    <value> تم إعادة فتح الوظيفة بنجاح.</value>
+  </data>
+  <data name="Auth_Unauthorized" xml:space="preserve">
+    <value>غير مصرح لك بتنفيذ هذه العملية.</value>
+  </data>
+  <data name="JobApplication_PositionClosed" xml:space="preserve">
+    <value>هذه الوظيفة لم تعد تستقبل طلبات تقديم</value>
+  </data>
+  <data name="JobApplication_CvRequired" xml:space="preserve">
+    <value>السيرة الذاتية مطلوبة للتقديم على هذه الوظيفة</value>
+  </data>
+  <data name="JobApplication_CvNotFound" xml:space="preserve">
+    <value>السيرة الذاتية ذات الرقم {0} غير موجودة</value>
+  </data>
+  <data name="JobApplication_AlreadyApplied" xml:space="preserve">
+    <value>لقد قمت بالتقديم على هذه الوظيفة باستخدام هذه السيرة الذاتية مسبقاً.</value>
+  </data>
+  <data name="JobApplication_ListLoaded" xml:space="preserve">
+    <value>تم تحميل طلبات التقديم بنجاح</value>
+  </data>
+  <data name="JobApplication_Created" xml:space="preserve">
+    <value>تم التقديم للوظيفة بنجاح </value>
+  </data>
+  <data name="JobPosition_NotActive" xml:space="preserve">
+    <value>هذه الوظيفة غير مفعلة ولا تقبل الطلبات حالياً</value>
+  </data>
+  <data name="DocumentCv_EmptyFile" xml:space="preserve">
+    <value>الملف المرفوع فارغ و يرجى رفع ملف سيرة ذاتية صالح</value>
+  </data>
+  <data name="JobPosition_NotFound" xml:space="preserve">
+    <value>لم يتم العثور على الوظيفة ذات المعرّف {0}.</value>
+  </data>
+  <data name="DocumentCv_OnlyPdfAllowed" xml:space="preserve">
+    <value>يسمح برفع ملفات PDF فقط</value>
+  </data>
+  <data name="DocumentCv_CandidateInfoRequired" xml:space="preserve">
+    <value>اسم المتقدم و بريده الالكتروني مطلوبان</value>
+  </data>
+  <data name="DocumentCv_Uploaded" xml:space="preserve">
+    <value>تم رفع السيرة الذاتية بنجاح</value>
+  </data>
+  <data name="JobApplication_NotFound" xml:space="preserve">
+    <value>لم يتم العثور على طلب التوظيف ذو المعرّف {0}.</value>
+  </data>
+  <data name="JobApplication_StatusSame" xml:space="preserve">
+    <value>طلب التوظيف موجود بالفعل في نفس الحالة المطلوبة.</value>
+  </data>
+  <data name="JobApplication_InvalidTransition" xml:space="preserve">
+    <value>انتقال حالة غير صالح من '{0}' إلى '{1}'.</value>
+  </data>
+  <data name="JobApplication_StatusChanged" xml:space="preserve">
+    <value>تم تغيير حالة طلب التوظيف {0} إلى '{1}'.</value>
+  </data>
+  <data name="LeaveAccrualJob_Finished" xml:space="preserve">
+    <value>انتهت عملية احتساب رصيد الإجازات بنجاح.</value>
+  </data>
+  <data name="LeaveAccrualJob_Started" xml:space="preserve">
+    <value>بدأت عملية احتساب رصيد الإجازات.</value>
+  </data>
+  <data name="Request_InvalidType" xml:space="preserve">
+    <value>نوع الطلب غير صالح.</value>
+  </data>
+  <data name="Request_NotFound" xml:space="preserve">
+    <value>لم يتم العثور على الطلب.</value>
+  </data>
+  <data name="Auth_EmployeeNotLinked" xml:space="preserve">
+    <value>المستخدم الحالي غير مرتبط بأي موظف.</value>
+  </data>
+  <data name="EmployeeDataChange_NoChanges" xml:space="preserve">
+    <value>لم يتم العثور على أي تغييرات في بيانات الموظف.</value>
+  </data>
+  <data name="EmployeeDataChange_Created" xml:space="preserve">
+    <value>تم إنشاء طلب تعديل بيانات الموظف بنجاح.</value>
+  </data>
+  <data name="EmployeeDataChange_ListLoaded" xml:space="preserve">
+    <value>تم تحميل قائمة طلبات تعديل بيانات الموظف بنجاح.</value>
+  </data>
+  <data name="FinancialRequest_InvalidAmount" xml:space="preserve">
+    <value>يجب أن يكون المبلغ أكبر من صفر.</value>
+  </data>
+  <data name="FinancialRequest_InvalidDateRange" xml:space="preserve">
+    <value>يجب أن يكون تاريخ البداية قبل أو مساوياً لتاريخ النهاية.</value>
+  </data>
+  <data name="FinancialRequest_Created" xml:space="preserve">
+    <value>تم إنشاء الطلب المالي بنجاح.</value>
+  </data>
+  <data name="FinancialRequest_ListLoaded" xml:space="preserve">
+    <value>تم تحميل قائمة الطلبات المالية بنجاح.</value>
+  </data>
+  <data name="LeaveAccrual_Completed" xml:space="preserve">
+    <value>تم إكمال عملية احتساب رصيد الإجازات بنجاح.</value>
+  </data>
+  <data name="LeaveAccrual_UnexpectedError" xml:space="preserve">
+    <value>حدث خطأ غير متوقع أثناء تنفيذ عملية احتساب رصيد الإجازات.</value>
+  </data>
+  <data name="LeaveBalance_MyLoaded" xml:space="preserve">
+    <value>تم تحميل رصيد الإجازات بنجاح.</value>
+  </data>
+  <data name="LeaveBalance_Insufficient" xml:space="preserve">
+    <value>رصيد الإجازات غير كافٍ لهذا الطلب.</value>
+  </data>
+  <data name="LeaveRequest_ListLoaded" xml:space="preserve">
+    <value>تم تحميل قائمة طلبات الإجازة بنجاح.</value>
+  </data>
+  <data name="LeaveRequest_Created" xml:space="preserve">
+    <value>تم إنشاء طلب الإجازة بنجاح.</value>
+  </data>
+  <data name="LeaveRequest_OverlappingDates" xml:space="preserve">
+    <value>لديك طلب إجازة آخر يتقاطع مع نفس الفترة الزمنية.</value>
+  </data>
+  <data name="LeaveRequest_InvalidTotalDays" xml:space="preserve">
+    <value>يجب أن يكون عدد أيام الإجازة أكبر من صفر.</value>
+  </data>
+  <data name="LeaveRequest_EndDateInPast" xml:space="preserve">
+    <value>لا يمكن أن يكون تاريخ النهاية في الماضي.</value>
+  </data>
+  <data name="LeaveRequest_InvalidDateRange" xml:space="preserve">
+    <value>يجب أن يكون تاريخ البداية قبل أو مساوياً لتاريخ النهاية.</value>
+  </data>
+  <data name="LeaveRequest_CannotCancelPastLeave" xml:space="preserve">
+    <value> لا يمكن إلغاء إجازة انتهى تاريخها بالفعل.</value>
+  </data>
+  <data name="LeaveRequest_DetailsNotLoaded" xml:space="preserve">
+    <value>تعذّر تحميل تفاصيل طلب الإجازة.</value>
+  </data>
+  <data name="ResignationRequest_ListLoaded" xml:space="preserve">
+    <value>تم تحميل قائمة طلبات الاستقالة بنجاح.</value>
+  </data>
+  <data name="ResignationRequest_Created" xml:space="preserve">
+    <value>تم إنشاء طلب الاستقالة بنجاح.</value>
+  </data>
+  <data name="ResignationRequest_InvalidLastWorkingDate" xml:space="preserve">
+    <value>يجب أن يكون آخر يوم عمل مقترح في المستقبل.</value>
+  </data>
+  <data name="Request_StatusChanged" xml:space="preserve">
+    <value>تم تغيير حالة الطلب بنجاح.</value>
+  </data>
+  <data name="Request_StatusChange_InvalidTransition" xml:space="preserve">
+    <value>تغيير حالة غير مسموح من {0} إلى {1}.</value>
+  </data>
+  <data name="Request_HistoryLoaded" xml:space="preserve">
+    <value>تم تحميل سجل الطلب بنجاح.</value>
+  </data>
+  <data name="Request_ApprovalListLoaded" xml:space="preserve">
+    <value>تم تحميل قائمة الطلبات المطلوب اعتمادها بنجاح.</value>
+  </data>
+  <data name="Request_ListLoaded" xml:space="preserve">
+    <value>تم تحميل قائمة الطلبات بنجاح.</value>
+  </data>
+  <data name="Employee_CircularManagementDetected" xml:space="preserve">
+    <value>تم اكتشاف علاقة إشراف دائرية بين الموظف والمدير.</value>
+  </data>
+  <data name="Employee_ManagerDepartmentMismatch" xml:space="preserve">
+    <value>يجب أن يكون الموظف والمدير ضمن نفس القسم.</value>
+  </data>
+  <data name="Employee_InvalidEmploymentDate" xml:space="preserve">
+    <value>تاريخ بدء العمل غير صالح.</value>
+  </data>
+  <data name="Tenant_CrossTenantNotAllowed" xml:space="preserve">
+    <value>لا يُسمح بالعمليات بين التينانتات المختلفة.</value>
+  </data>
+  <data name="Employee_ManagerNotFound" xml:space="preserve">
+    <value>لم يتم العثور على المدير.</value>
+  </data>
+  <data name="Employee_ManagerCannotBeSelf" xml:space="preserve">
+    <value>لا يمكن للموظف أن يكون مديرًا لنفسه.</value>
+  </data>
+  <data name="Tenant_NotFound" xml:space="preserve">
+    <value>لم يتم العثور على التينانت.</value>
+  </data>
+  <data name="Tenant_ListRetrieved" xml:space="preserve">
+    <value>تم جلب قائمة التينانتات بنجاح</value>
+  </data>
+  <data name="Tenant_Created" xml:space="preserve">
+    <value>تم انشاء التينانت بنجاح</value>
+  </data>
+  <data name="Tenant_NameExists" xml:space="preserve">
+    <value>يوجد تينانت آخر بنفس الاسم.</value>
+  </data>
+  <data name="Tenant_CodeExists" xml:space="preserve">
+    <value>يوجد تينانت آخر بنفس الكود.</value>
+  </data>
+  <data name="Tenant_NameCodeRequired" xml:space="preserve">
+    <value>اسم التينانت والكود حقول مطلوبة.</value>
+  </data>
+  <data name="Employee_ManagerAlreadyAssigned" xml:space="preserve">
+    <value>تم تعيين هذا المدير مسبقًا لهذا الموظف.</value>
+  </data>
+  <data name="Employee_ManagerAssigned" xml:space="preserve">
+    <value>تم تعيين المدير بنجاح.</value>
+  </data>
+  <data name="Department_ManagerAlreadyAssigned" xml:space="preserve">
+    <value>تم تعيين هذا المدير مسبقًا لهذا القسم.</value>
+  </data>
+  <data name="Department_ManagerDepartmentMismatch" xml:space="preserve">
+    <value>المدير المحدد لا ينتمي إلى هذا القسم.</value>
+  </data>
+  <data name="Tenant_StatusUpdated" xml:space="preserve">
+    <value>تم تحديث حالة التينانت بنجاح.</value>
+  </data>
+  <data name="Tenant_Updated" xml:space="preserve">
+    <value>تم تحديث بيانات التينانت بنجاح.</value>
+  </data>
+  <data name="Department_InvalidParent" xml:space="preserve">
+    <value>القسم الأب غير صالح.</value>
+  </data>
+  <data name="DocumentCv_NotFound" xml:space="preserve">
+    <value>لم يتم العثور على سجل السيرة الذاتية.</value>
+  </data>
+  <data name="DocumentCv_FileNotFound" xml:space="preserve">
+    <value>لم يتم العثور على ملف السيرة الذاتية على الخادم.</value>
+  </data>
+  <data name="CvRanking_Scored" xml:space="preserve">
+    <value>تم تقييم السيرة الذاتية بنجاح.</value>
+  </data>
+  <data name="Department_ParentAssigned" xml:space="preserve">
+    <value>تم تعيين القسم الأب بنجاح.</value>
+  </data>
+  <data name="Department_CyclicHierarchyNotAllowed" xml:space="preserve">
+    <value>لا يُسمح بهيكل أقسام دائري (حلقة بين الأقسام).</value>
+  </data>
+</root>

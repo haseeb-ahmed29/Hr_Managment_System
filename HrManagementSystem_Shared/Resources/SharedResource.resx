@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Department_HasChildren" xml:space="preserve">
+    <value>Cannot delete department because it has child departments.</value>
+  </data>
+  <data name="Department_HasEmployees" xml:space="preserve">
+    <value>Cannot delete department because employees are assigned to it.</value>
+  </data>
+  <data name="Department_CannotBeOwnParent" xml:space="preserve">
+    <value>Department cannot be parent of itself.</value>
+  </data>
+  <data name="Department_CodeExists" xml:space="preserve">
+    <value>Department code is already in use.</value>
+  </data>
+  <data name="Department_CodeRequired" xml:space="preserve">
+    <value>DeptName and Code are required.</value>
+  </data>
+  <data name="Department_Created" xml:space="preserve">
+    <value>Department created successfully.</value>
+  </data>
+  <data name="Department_Deleted" xml:space="preserve">
+    <value>Department deleted successfully.</value>
+  </data>
+  <data name="Department_ManagerAssigned" xml:space="preserve">
+    <value>Cannot delete department because it has a manager assigned.</value>
+  </data>
+  <data name="Department_NotFound" xml:space="preserve">
+    <value>Department not found.</value>
+  </data>
+  <data name="Department_ParentNotFound" xml:space="preserve">
+    <value>Parent department not found.</value>
+  </data>
+  <data name="Department_Updated" xml:space="preserve">
+    <value>Department updated successfully.</value>
+  </data>
+  <data name="Generic_IdMismatch" xml:space="preserve">
+    <value>ID mismatch.</value>
+  </data>
+  <data name="Generic_InvalidData" xml:space="preserve">
+    <value>Invalid request data.</value>
+  </data>
+  <data name="Generic_NotFound" xml:space="preserve">
+    <value>Resource not found.</value>
+  </data>
+  <data name="Generic_OperationFailed" xml:space="preserve">
+    <value>Operation failed.</value>
+  </data>
+  <data name="Generic_OperationSucceeded" xml:space="preserve">
+    <value>Operation completed successfully.</value>
+  </data>
+  <data name="Generic_UnexpectedError" xml:space="preserve">
+    <value>An unexpected error occurred.</value>
+  </data>
+  <data name="Employee_NotFound" xml:space="preserve">
+    <value>Employee not found.</value>
+  </data>
+  <data name="Employee_Created" xml:space="preserve">
+    <value>Employee created successfully.</value>
+  </data>
+  <data name="Employee_Updated" xml:space="preserve">
+    <value>Employee updated successfully.</value>
+  </data>
+  <data name="Employee_Deleted" xml:space="preserve">
+    <value>Employee deleted successfully.</value>
+  </data>
+  <data name="Employee_EmailExists" xml:space="preserve">
+    <value>Employee with this email already exists.</value>
+  </data>
+  <data name="Employee_BasicFieldsRequired" xml:space="preserve">
+    <value>First name, last name and email are required.</value>
+  </data>
+  <data name="Employee_InvalidDateOfBirth" xml:space="preserve">
+    <value>Invalid date of birth.</value>
+  </data>
+  <data name="Employee_MustBeAdult" xml:space="preserve">
+    <value>Employee must be at least 18 years old.</value>
+  </data>
+  <data name="Employee_PositionRequired" xml:space="preserve">
+    <value>Position is required.</value>
+  </data>
+  <data name="Employee_DepartmentNotFound" xml:space="preserve">
+    <value>Department for this employee was not found.</value>
+  </data>
+  <data name="Employee_HasSubordinates" xml:space="preserve">
+    <value>Cannot delete employee because they have subordinates.</value>
+  </data>
+  <data name="Employee_IsDepartmentManager" xml:space="preserve">
+    <value>Cannot delete employee because they are assigned as manager.</value>
+  </data>
+  <data name="Delete_DeletedByRequired" xml:space="preserve">
+    <value>DeletedByEmployeeId is required.</value>
+  </data>
+  <data name="Delete_Forbidden" xml:space="preserve">
+    <value>You cannot delete this resource.</value>
+  </data>
+  <data name="Employee_ListLoaded" xml:space="preserve">
+    <value>Employees loaded successfully.</value>
+  </data>
+  <data name="Department_ListLoaded" xml:space="preserve">
+    <value>Departments loaded successfully.</value>
+  </data>
+  <data name="Pagination_InvalidPageNumber" xml:space="preserve">
+    <value>Invalid page number.</value>
+  </data>
+  <data name="Pagination_InvalidPageSize" xml:space="preserve">
+    <value>Invalid page size.</value>
+  </data>
+  <data name="Auth_LoginSuccess" xml:space="preserve">
+    <value>Login successful.</value>
+  </data>
+  <data name="Role_NotFound" xml:space="preserve">
+    <value>Role employee not found</value>
+  </data>
+  <data name="EmployeeRole_AlreadyAssigned" xml:space="preserve">
+    <value>Employee is already has role</value>
+  </data>
+  <data name="EmployeeRole_Assigned" xml:space="preserve">
+    <value>Employee role defualt assigned to employee</value>
+  </data>
+  <data name="Auth_InvalidCredentials" xml:space="preserve">
+    <value>Invalid email or password.</value>
+  </data>
+  <data name="EmployeeRole_Updated" xml:space="preserve">
+    <value>Employee roles updated successfully.</value>
+  </data>
+  <data name="Auth_InvalidCurrentPassword" xml:space="preserve">
+    <value>Current password is incorrect.</value>
+  </data>
+  <data name="Auth_NewPasswordMustBeDifferent" xml:space="preserve">
+    <value>New password must be different from the current password.</value>
+  </data>
+  <data name="Auth_PasswordChanged" xml:space="preserve">
+    <value>Password changed successfully.</value>
+  </data>
+  <data name="Auth_Password_ContainsEmailPart" xml:space="preserve">
+    <value>Password must not contain parts of your email address.</value>
+  </data>
+  <data name="Auth_Password_HasWhitespace" xml:space="preserve">
+    <value>Password must not contain spaces.</value>
+  </data>
+  <data name="Auth_Password_IsCommon" xml:space="preserve">
+    <value>Password is too common. Please choose a stronger one.</value>
+  </data>
+  <data name="Auth_Password_MissingLower" xml:space="preserve">
+    <value>Password must contain at least one lowercase letter.</value>
+  </data>
+  <data name="Auth_Password_MissingDigit" xml:space="preserve">
+    <value>Password must contain at least one digit.</value>
+  </data>
+  <data name="Auth_Password_MissingUpper" xml:space="preserve">
+    <value>Password must contain at least one uppercase letter.</value>
+  </data>
+  <data name="Auth_Password_Required" xml:space="preserve">
+    <value>Password is required.</value>
+  </data>
+  <data name="Auth_Password_MissingSpecial" xml:space="preserve">
+    <value>Password must contain at least one special character.</value>
+  </data>
+  <data name="Auth_Password_TooShort" xml:space="preserve">
+    <value>Password must be at least 8 characters long.</value>
+  </data>
+  <data name="EmployeeRole_NotFound" xml:space="preserve">
+    <value>Employee role not found.</value>
+  </data>
+  <data name="JobPosition_RequirementRequired" xml:space="preserve">
+    <value>Requirements are required.</value>
+  </data>
+  <data name="JobPosition_TitleRequired" xml:space="preserve">
+    <value>req</value>
+  </data>
+  <data name="JobPosition_ClosingDateInvalid" xml:space="preserve">
+    <value>Closing date cannot be in the past</value>
+  </data>
+  <data name="JobPosition_DepartmentNotFound" xml:space="preserve">
+    <value>Department with Id {0}  was not found</value>
+  </data>
+  <data name="JobPosition_Created" xml:space="preserve">
+    <value>Job position created successfully.</value>
+  </data>
+  <data name="JobPosition_DetailsLoaded" xml:space="preserve">
+    <value>Job position details loaded successfully.</value>
+  </data>
+  <data name="JobPosition_ListLoaded" xml:space="preserve">
+    <value>Job positions list loaded successfully.</value>
+  </data>
+  <data name="JobPosition_Updated" xml:space="preserve">
+    <value>Job position updated successfully.</value>
+  </data>
+  <data name="JobPosition_HasApplications" xml:space="preserve">
+    <value>Job position with Id {0} has applications and cannot be deleted.</value>
+  </data>
+  <data name="JobPosition_Deleted" xml:space="preserve">
+    <value>Job position deleted successfully.</value>
+  </data>
+  <data name="JobPosition_AlreadyClosed" xml:space="preserve">
+    <value>Job position is already closed.</value>
+  </data>
+  <data name="JobPosition_AlreadyOpen" xml:space="preserve">
+    <value>Job position is already open.</value>
+  </data>
+  <data name="JobPosition_Closed" xml:space="preserve">
+    <value>Job position was closed successfully.</value>
+  </data>
+  <data name="JobPosition_Reopened" xml:space="preserve">
+    <value>Job position was reopened successfully.</value>
+  </data>
+  <data name="Auth_Unauthorized" xml:space="preserve">
+    <value>You are not authorized.</value>
+  </data>
+  <data name="JobApplication_PositionClosed" xml:space="preserve">
+    <value>This job position is not accepting applications anymore.</value>
+  </data>
+  <data name="JobApplication_CvRequired" xml:space="preserve">
+    <value>CV is required to apply for this position.</value>
+  </data>
+  <data name="JobApplication_CvNotFound" xml:space="preserve">
+    <value>CV with Id {0} was not found.</value>
+  </data>
+  <data name="JobApplication_AlreadyApplied" xml:space="preserve">
+    <value>You have already applied to this position with this CV.</value>
+  </data>
+  <data name="JobApplication_ListLoaded" xml:space="preserve">
+    <value>Job applications loaded successfully.</value>
+  </data>
+  <data name="JobApplication_Created" xml:space="preserve">
+    <value>apply with position is done</value>
+  </data>
+  <data name="JobPosition_NotActive" xml:space="preserve">
+    <value>This job position is not active and cannot accept applications.</value>
+  </data>
+  <data name="DocumentCv_EmptyFile" xml:space="preserve">
+    <value>The uploaded file is empty. Please upload a valid CV file</value>
+  </data>
+  <data name="JobPosition_NotFound" xml:space="preserve">
+    <value>Job position with Id {0} was not found</value>
+  </data>
+  <data name="DocumentCv_OnlyPdfAllowed" xml:space="preserve">
+    <value>Only PDF files are allowed</value>
+  </data>
+  <data name="DocumentCv_CandidateInfoRequired" xml:space="preserve">
+    <value>Candidate name and email are required</value>
+  </data>
+  <data name="DocumentCv_Uploaded" xml:space="preserve">
+    <value>CV has been uploaded successfully.</value>
+  </data>
+  <data name="JobApplication_NotFound" xml:space="preserve">
+    <value>Job application with Id {0} was not found.</value>
+  </data>
+  <data name="JobApplication_StatusSame" xml:space="preserve">
+    <value>The application is already in the requested status</value>
+  </data>
+  <data name="JobApplication_InvalidTransition" xml:space="preserve">
+    <value>Invalid status transition from '{0}' to '{1}'</value>
+  </data>
+  <data name="JobApplication_StatusChanged" xml:space="preserve">
+    <value>Application {0} status has been changed to '{1}'</value>
+  </data>
+  <data name="LeaveAccrualJob_Finished" xml:space="preserve">
+    <value>Leave accrual job finished successfully</value>
+  </data>
+  <data name="LeaveAccrualJob_Started" xml:space="preserve">
+    <value>Leave accrual job started</value>
+  </data>
+  <data name="Request_InvalidType" xml:space="preserve">
+    <value>Invalid request type</value>
+  </data>
+  <data name="Request_NotFound" xml:space="preserve">
+    <value>Request was not found</value>
+  </data>
+  <data name="Auth_EmployeeNotLinked" xml:space="preserve">
+    <value>Current user is not linked to any employee</value>
+  </data>
+  <data name="EmployeeDataChange_NoChanges" xml:space="preserve">
+    <value>No changes were detected in the employee data</value>
+  </data>
+  <data name="EmployeeDataChange_Created" xml:space="preserve">
+    <value>Employee data change request created successfully</value>
+  </data>
+  <data name="EmployeeDataChange_ListLoaded" xml:space="preserve">
+    <value>Employee data change requests loaded successfully</value>
+  </data>
+  <data name="FinancialRequest_InvalidAmount" xml:space="preserve">
+    <value>Amount must be greater than zero</value>
+  </data>
+  <data name="FinancialRequest_InvalidDateRange" xml:space="preserve">
+    <value>From date must be before or equal to to date</value>
+  </data>
+  <data name="FinancialRequest_Created" xml:space="preserve">
+    <value>Financial request created successfully</value>
+  </data>
+  <data name="FinancialRequest_ListLoaded" xml:space="preserve">
+    <value>Financial requests loaded successfully</value>
+  </data>
+  <data name="LeaveAccrual_Completed" xml:space="preserve">
+    <value>Leave accrual process completed successfully</value>
+  </data>
+  <data name="LeaveAccrual_UnexpectedError" xml:space="preserve">
+    <value>Unexpected error occurred while running leave accrual</value>
+  </data>
+  <data name="LeaveBalance_MyLoaded" xml:space="preserve">
+    <value>Leave balance loaded successfully</value>
+  </data>
+  <data name="LeaveBalance_Insufficient" xml:space="preserve">
+    <value>Insufficient leave balance for this request</value>
+  </data>
+  <data name="LeaveRequest_ListLoaded" xml:space="preserve">
+    <value>Leave requests loaded successfully</value>
+  </data>
+  <data name="LeaveRequest_Created" xml:space="preserve">
+    <value>Leave request created successfully</value>
+  </data>
+  <data name="LeaveRequest_OverlappingDates" xml:space="preserve">
+    <value>You already have another leave request overlapping this date range</value>
+  </data>
+  <data name="LeaveRequest_InvalidTotalDays" xml:space="preserve">
+    <value>Total leave days must be greater than zero</value>
+  </data>
+  <data name="LeaveRequest_EndDateInPast" xml:space="preserve">
+    <value>End date cannot be in the past</value>
+  </data>
+  <data name="LeaveRequest_InvalidDateRange" xml:space="preserve">
+    <value>Start date must be before or equal to end date</value>
+  </data>
+  <data name="LeaveRequest_CannotCancelPastLeave" xml:space="preserve">
+    <value>You cannot cancel a leave that has already ended</value>
+  </data>
+  <data name="LeaveRequest_DetailsNotLoaded" xml:space="preserve">
+    <value>Leave request details could not be loaded</value>
+  </data>
+  <data name="ResignationRequest_ListLoaded" xml:space="preserve">
+    <value>Resignation requests loaded successfully</value>
+  </data>
+  <data name="ResignationRequest_Created" xml:space="preserve">
+    <value>Resignation request created successfully</value>
+  </data>
+  <data name="ResignationRequest_InvalidLastWorkingDate" xml:space="preserve">
+    <value>Proposed last working date must be in the future</value>
+  </data>
+  <data name="Request_StatusChanged" xml:space="preserve">
+    <value>Request status changed successfully</value>
+  </data>
+  <data name="Request_StatusChange_InvalidTransition" xml:space="preserve">
+    <value>Invalid status transition from {0} to {1}</value>
+  </data>
+  <data name="Request_HistoryLoaded" xml:space="preserve">
+    <value>Request history loaded successfully</value>
+  </data>
+  <data name="Request_ApprovalListLoaded" xml:space="preserve">
+    <value>Approval requests loaded successfully</value>
+  </data>
+  <data name="Request_ListLoaded" xml:space="preserve">
+    <value>Requests loaded successfully</value>
+  </data>
+  <data name="Employee_CircularManagementDetected" xml:space="preserve">
+    <value>Circular management relationship detected</value>
+  </data>
+  <data name="Employee_ManagerDepartmentMismatch" xml:space="preserve">
+    <value>Employee and manager must belong to the same department</value>
+  </data>
+  <data name="Employee_InvalidEmploymentDate" xml:space="preserve">
+    <value>Invalid employment start date.</value>
+  </data>
+  <data name="Tenant_CrossTenantNotAllowed" xml:space="preserve">
+    <value>Cross-tenant operation is not allowed</value>
+  </data>
+  <data name="Employee_ManagerNotFound" xml:space="preserve">
+    <value>Manager was not found</value>
+  </data>
+  <data name="Employee_ManagerCannotBeSelf" xml:space="preserve">
+    <value>Employee cannot be their own manager</value>
+  </data>
+  <data name="Tenant_NotFound" xml:space="preserve">
+    <value>Tenant was not found</value>
+  </data>
+  <data name="Tenant_ListRetrieved" xml:space="preserve">
+    <value>Tenant list retrieved successfully</value>
+  </data>
+  <data name="Tenant_Created" xml:space="preserve">
+    <value>Tenant has been created successfully</value>
+  </data>
+  <data name="Tenant_NameExists" xml:space="preserve">
+    <value>A tenant with the same name already exists</value>
+  </data>
+  <data name="Tenant_CodeExists" xml:space="preserve">
+    <value>A tenant with the same code already exists</value>
+  </data>
+  <data name="Tenant_NameCodeRequired" xml:space="preserve">
+    <value>Tenant name and code are required</value>
+  </data>
+  <data name="Employee_ManagerAlreadyAssigned" xml:space="preserve">
+    <value>This manager is already assigned to the employee</value>
+  </data>
+  <data name="Employee_ManagerAssigned" xml:space="preserve">
+    <value>Manager has been assigned successfully</value>
+  </data>
+  <data name="Department_ManagerAlreadyAssigned" xml:space="preserve">
+    <value>This manager is already assigned to the department</value>
+  </data>
+  <data name="Department_ManagerDepartmentMismatch" xml:space="preserve">
+    <value>The selected manager does not belong to this department</value>
+  </data>
+  <data name="Tenant_StatusUpdated" xml:space="preserve">
+    <value>Tenant has been updated successfully</value>
+  </data>
+  <data name="Tenant_Updated" xml:space="preserve">
+    <value>Tenant has been updated successfully</value>
+  </data>
+  <data name="Department_InvalidParent" xml:space="preserve">
+    <value>Invalid parent department</value>
+  </data>
+  <data name="DocumentCv_NotFound" xml:space="preserve">
+    <value>CV record was not found</value>
+  </data>
+  <data name="DocumentCv_FileNotFound" xml:space="preserve">
+    <value>CV file could not be found on the server</value>
+  </data>
+  <data name="CvRanking_Scored" xml:space="preserve">
+    <value>CV has been scored successfully</value>
+  </data>
+  <data name="Department_ParentAssigned" xml:space="preserve">
+    <value>Parent department has been set successfully</value>
+  </data>
+  <data name="Department_CyclicHierarchyNotAllowed" xml:space="preserve">
+    <value>Cyclic department hierarchy is not allowed</value>
+  </data>
+</root>
