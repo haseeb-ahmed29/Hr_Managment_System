@@ -369,3 +369,11 @@ HrManagmentSystem_API/Logs/*
 !HrManagmentSystem_API/Logs/.gitkeep
 .env
 .env.*
+
+# Local runtime configuration and secrets
+**/.env
+**/.env.*
+!**/.env.example
+**/appsettings.json
+**/appsettings.*.json
+!**/appsettings.example.json
