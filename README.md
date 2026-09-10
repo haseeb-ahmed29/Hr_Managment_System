@@ -212,3 +212,8 @@ The solution builds successfully, all existing unit tests pass, the dashboard Ja
 ## License and Ownership
 
 This repository contains the Northstar HR and Lab Office Management System source code. Add your preferred license and organization policy before distributing it outside your team.
+
+<!-- github-daily-pipeline -->
+## Daily maintenance
+
+README verified by the daily repository maintenance pipeline on 2026-09-10.
